@@ -14,41 +14,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Toast.makeText(this, "OnCreate function", Toast.LENGTH_LONG)
-        Log.i("info", "onCreate Function Executed!")
+//        Toast.makeText(this, "OnCreate function", Toast.LENGTH_LONG)
+//        Log.i("info", "onCreate Function Executed!")
+
+        val numInt: Int = 100
+        val pi: Float = 3.14f
+        val numLong: Long = 98567842132020021
+        val isSheNice: Boolean = true
+        val isSigned: Boolean = true
+        var testString: String = "Namanya siapa"
+
+
+        testString = "apasaja"
+
     }
-
-    //single line kotlin
-//
-//    override fun onStart() {
-//        super.onStart()
-//        Toast.makeText(this, "OnStart function", Toast.LENGTH_LONG)
-//        Log.i("info", "OnStart Function Executed!")
-//    }
-    //multiline comment kotlin
-    override fun onResume() {
-        super.onResume()
-        Toast.makeText(this, "OnResume function", Toast.LENGTH_LONG)
-        Log.i("info", "OnResume Function Executed!")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Toast.makeText(this, "onPause function", Toast.LENGTH_LONG)
-        Log.i("info", "onPause Function Executed!")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Toast.makeText(this, "onStop function", Toast.LENGTH_LONG)
-        Log.i("info", "onStop Function Executed!")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Toast.makeText(this, "onDestroy function", Toast.LENGTH_LONG)
-        Log.i("info", "onDestroy Function Executed!")
-    }
-
-
 }
