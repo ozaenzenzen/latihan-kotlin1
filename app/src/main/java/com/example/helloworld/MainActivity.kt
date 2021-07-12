@@ -18,12 +18,14 @@ class MainActivity : AppCompatActivity() {
         Log.i("info", "onCreate Function Executed!")
     }
 
-    override fun onStart() {
-        super.onStart()
-        Toast.makeText(this, "OnStart function", Toast.LENGTH_LONG)
-        Log.i("info", "OnStart Function Executed!")
-    }
-
+    //single line kotlin
+//
+//    override fun onStart() {
+//        super.onStart()
+//        Toast.makeText(this, "OnStart function", Toast.LENGTH_LONG)
+//        Log.i("info", "OnStart Function Executed!")
+//    }
+    //multiline comment kotlin
     override fun onResume() {
         super.onResume()
         Toast.makeText(this, "OnResume function", Toast.LENGTH_LONG)
