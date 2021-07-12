@@ -1,8 +1,11 @@
 package com.example.helloworld
 
+import android.app.KeyguardManager
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import java.security.Key
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,18 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val textview: TextView = findViewById(R.id.textView)
-
-        var firstNumber = 10
-        var secondNummber: Int = 20
-
-        if (secondNummber != null) {
-            var result = firstNumber.times(secondNummber)
-            textview.setText(result.toString())
-        }
-        else{
-            var result = "String berisi null"
-            textview.setText(result.toString())
+        //type casting - as
+        val keyMgr =  getSystemService(Context.KEYGUARD_SERVICE) as? KeyguardManager
+        if(keyMgr is KeyguardManager){
+            //do something
         }
 
+//        textview.setText(result.toString())
     }
 }
