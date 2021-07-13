@@ -17,15 +17,40 @@ class MainActivity : AppCompatActivity() {
 //        Toast.makeText(this, "OnCreate function", Toast.LENGTH_LONG)
 //        Log.i("info", "onCreate Function Executed!")
 
-        val numInt: Int = 100
-        val pi: Float = 3.14f
-        val numLong: Long = 98567842132020021
-        val isSheNice: Boolean = true
-        val isSigned: Boolean = true
-        var testString: String = "Namanya siapa"
+        var carBrand = "Toyota"
+        var carName = "Fortuner"
+        val year = 2005
+        val yearNow = 2021
 
+        //additional operator
+        var total = carBrand + carName + year.toString()
 
-        testString = "apasaja"
+        //assignment operator
+        carBrand = carName
 
+        //subtract operator
+        var totalYear = "The car is " + (yearNow - year) + " years old"
+
+        //division operator
+        var divisionResult = yearNow / year
+
+        //multipliction operator
+        var mulResult = yearNow * year
+
+        //increment operator
+        var incrementResult = 2000
+        incrementResult++
+
+        //decrement operator
+        var decrementResult = 1000
+        decrementResult--
+        decrementResult--
+
+        //show output to log
+        Log.i("LOG", total)
+
+        val textView: TextView = findViewById(R.id.textView)
+
+        textView.setText(decrementResult.toString())
     }
 }
