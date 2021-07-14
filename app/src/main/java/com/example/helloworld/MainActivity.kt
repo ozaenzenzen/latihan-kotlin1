@@ -16,13 +16,20 @@ class MainActivity : AppCompatActivity() {
 
         // while, do-while, for
 
-        var x = 10
+        var a = 10
+        var b = 20
 
-        while (x < 100) {
-            Log.i("x = ", "$x")
-            x++
+        while (a < 100 || b < 100) {
+            Log.i("a dan b = ", "nilai a dan nilai b saat ini $a & $b")
+            a++
+            b++
         }
 
-        Log.i("Final value of x = ", "the value is $x")
+        var x = 20
+
+        do {
+            x++
+            Log.i("x = ", "Nilai x saat ini $x")
+        } while (x < 100)
     }
 }
