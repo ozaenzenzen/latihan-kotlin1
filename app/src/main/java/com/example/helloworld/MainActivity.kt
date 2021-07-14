@@ -14,19 +14,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        Toast.makeText(this, "OnCreate function", Toast.LENGTH_LONG)
-//        Log.i("info", "onCreate Function Executed!")
+        // while, do-while, for
 
-        /*
-         || OR
-         && AND
-         >
-         <
-         >=
-         <=
-         !=
-         ==
+        var x = 10
 
-         */
+        while (x < 100) {
+            Log.i("x = ", "$x")
+            x++
+        }
+
+        Log.i("Final value of x = ", "the value is $x")
     }
 }
