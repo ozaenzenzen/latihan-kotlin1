@@ -16,20 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         // while, do-while, for
 
-        var a = 10
-        var b = 20
+        val rangeNumber = 1..10
+        val anotherRangeNumber = listOf<Int>(1,2,3,4)
 
-        while (a < 100 || b < 100) {
-            Log.i("a dan b = ", "nilai a dan nilai b saat ini $a & $b")
-            a++
-            b++
+        for(i in rangeNumber){
+            Log.i("LOOPING", "Current value now $i")
         }
 
-        var x = 20
 
-        do {
-            x++
-            Log.i("x = ", "Nilai x saat ini $x")
-        } while (x < 100)
     }
 }
