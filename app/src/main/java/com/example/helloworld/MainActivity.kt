@@ -15,14 +15,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // while, do-while, for
-
-        val rangeNumber = 1..10
-        val anotherRangeNumber = listOf<Int>(1,2,3,4)
-
-        for(i in rangeNumber){
-            Log.i("LOOPING", "Current value now $i")
+        var countUp = 0
+        while (countUp < 20) {
+            countUp++
+            if (countUp > 15) {
+                continue
+            }
+            Log.i("continue", "Continue at $countUp")
         }
-
+        Log.i("Output", "Result $countUp")
 
     }
 }
