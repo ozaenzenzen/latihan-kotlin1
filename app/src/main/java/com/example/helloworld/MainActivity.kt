@@ -14,11 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       //function kotlin
-        printToLog("Parameter filled", "Function Runned: ")
+        //function 2 kotlin
+        val ans: Int = getASum(2, 3)
+        Log.i("Tag: ", ans.toString())
     }
 
-    fun printToLog(message: String, tagMessage: String){
-        Log.i(tagMessage, message)
+    fun getASum(a: Int, b: Int): Int {
+        return a + b
     }
+
 }
