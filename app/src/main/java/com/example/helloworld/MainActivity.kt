@@ -14,16 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // while, do-while, for
-        var countUp = 0
-        while (countUp < 20) {
-            countUp++
-            if (countUp > 15) {
-                continue
-            }
-            Log.i("continue", "Continue at $countUp")
-        }
-        Log.i("Output", "Result $countUp")
+        // statement and conditions
+        val textView: TextView = findViewById(R.id.textView)
+
+        val x = 10
+        if(x > 9)
+            textView.setText("10 is greater than 9")
 
     }
 }
