@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         // statement and conditions
         val textView: TextView = findViewById(R.id.textView)
 
-        var x = 14
-        var y = 20
+        var x = 12
+//        var y = 20
 
         when (x) {
             9 -> textView.setText("9 Lower than 10")
