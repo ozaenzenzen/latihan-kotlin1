@@ -14,20 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // statement and conditions
-        val textView: TextView = findViewById(R.id.textView)
+       //function kotlin
+        printToLog("Parameter filled", "Function Runned: ")
+    }
 
-        var x = 12
-//        var y = 20
-
-        when (x) {
-            9 -> textView.setText("9 Lower than 10")
-            10 -> textView.setText("10 same with 10")
-            11 -> textView.setText("11 Greater than 10")
-            12 -> textView.setText("12 Greater than 10")
-
-            else -> textView.setText("Out of if statement")
-        }
-
+    fun printToLog(message: String, tagMessage: String){
+        Log.i(tagMessage, message)
     }
 }
