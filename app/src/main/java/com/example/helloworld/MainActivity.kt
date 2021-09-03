@@ -17,9 +17,16 @@ class MainActivity : AppCompatActivity() {
         // statement and conditions
         val textView: TextView = findViewById(R.id.textView)
 
-        val x = 10
-        if(x > 9)
-            textView.setText("10 is greater than 9")
+        var x = 10
+        var y = 20
+
+        var largest = "XY"
+
+        if (x > y)
+            textView.setText("X")
+        else
+            textView.setText("Y")
+
 
     }
 }
