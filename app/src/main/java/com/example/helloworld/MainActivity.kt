@@ -13,26 +13,30 @@ import org.w3c.dom.Text
 import java.security.Key
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
+//class MainActivity : AppCompatActivity(){
     private var value = 0
 
-    val textView: TextView = findViewById(R.id.textView)
+    lateinit var textView: TextView
+    lateinit var btnAdd: Button
+    lateinit var btnGrow: Button
     lateinit var btnHide: Button
-
+    lateinit var btnTake: Button
+    lateinit var btnShrink: Button
+    lateinit var btnReset: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         //Ui Examples
+        textView = findViewById(R.id.textView)
 
-        val btnAdd: Button = findViewById(R.id.btnAdd)
-        val btnGrow: Button = findViewById(R.id.btnGrow)
-//        val btnHide: Button = findViewById(R.id.btnHide)
-        btnHide =  findViewById(R.id.btnHide)
-        val btnTake: Button = findViewById(R.id.btnTake)
-        val btnShrink: Button = findViewById(R.id.btnShrink)
-        val btnReset: Button = findViewById(R.id.btnReset)
+        btnAdd = findViewById(R.id.btnAdd)
+        btnGrow = findViewById(R.id.btnGrow)
+        btnHide = findViewById(R.id.btnHide)
+        btnTake = findViewById(R.id.btnTake)
+        btnShrink = findViewById(R.id.btnShrink)
+        btnReset = findViewById(R.id.btnReset)
 
         textView.setOnClickListener(this)
 
@@ -44,10 +48,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnReset.setOnClickListener(this)
     }
 
-    override fun onClick(v: View?) {
+    override fun onClick(v: View) {
         val size: Float
 
-        when (v?.id) {
+        when (v.id) {
             R.id.btnAdd -> {
                 value++
                 textView.text = "$value"
